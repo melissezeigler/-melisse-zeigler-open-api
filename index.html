@@ -13,11 +13,32 @@
     <title>Weather Forecast</title>
 </head>
 <body>
-<!-- OPEN API -->
-    <section id="api">
+    <!-- Maybe add a Navbar to go to the api section, coordinates link, lil intro, and footer -->
+<!-- OPEN API section-->
+    <section id="coordinates">
         <h1>Weather Forecast</h1>
-        <ul></ul>
+        <p><i>Enter your coordinates!</i></p>
+        <form id="locationForm">
+            <label for="latitude">Latitude:</label>
+            <input type="number" id="latitude" name="latitude" step="any" required>
+            <label for="longitude">Longitude:</label>
+            <input type="number" id="longitude" name="longitude" step="any" required>
+            <button type="submit">Weather Details</button>
+        </form>
+        <div id="weatherData" class="hidden">
+            <h2>Current Weather:</h2>
+            <p>Temperature: <span id="temperature"></span> °F</p>
+            <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            <p>Wind Direction: <span id="windDirection"></span>°</p>
+        </div>
     </section>
-    <script src="js/index.js"></script>
+
+    <!-- <section id="coordinatesLink">
+        <div>
+            <a href="https://www.latlong.net/"><i>Click on this link if you don't know your coordinates!</i></a>
+        </div>
+    </section> -->
+    <!-- Adding some info why I made this app. "I made this app because as these details are useful when preparing for a hike...blahblah" -->
+    <!-- Footer will be added with a copyright as these is/are my picture/s -->
 </body>
 </html>
