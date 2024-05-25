@@ -16,7 +16,7 @@ document.getElementById('locationForm').addEventListener('submit', function(even
                 document.getElementById('windDirection').textContent = weatherData.winddirection;
                 document.getElementById('weatherData').classList.remove('hidden');
                 document.getElementById('forecastData').classList.add('hidden');
-                document.querySelector('#coordinates a').classList.add('hidden'); // Hide the link
+                document.querySelector('#coordinates a').classList.add('hidden'); 
             } else {
                 console.error('Current weather data is not available! 😥');
             }
